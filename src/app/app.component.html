@@ -1,10 +1,14 @@
 <div class="container-fluid">
     <div class="row bg-danger" style="height: 100px; z-index:-1">
-
+        <div class="col-12 text-center mt-3">
+            <button class="btn btn-light mr-3" routerLink="/home" routerLinkActive="active">Home</button>
+            <button class="btn btn-light" routerLink="/todos" routerLinkActive="active">Todos</button>
+        </div>
     </div>
     <div class="row" style="margin-top: -45px; z-index: 100">
         <div class="col-11 bg-white mx-auto shadow" style="height: 90vh">
-            <app-todo></app-todo>
+            <router-outlet></router-outlet>
+            <!-- <app-todo></app-todo> -->
         </div>
     </div>
 </div>

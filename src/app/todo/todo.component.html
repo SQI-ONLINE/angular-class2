@@ -4,8 +4,10 @@
             <h4 class="p-2">Todos</h4>
             <div class="col-12" style="height: 82vh">
                 <div class="row shadow">
-                    <div class="col-12 p-3" *ngFor="let i = index; let todo of todoList">
-                       {{i}} {{todo}}
+                    <div class="col-12 p-3"  *ngFor="let i = index; let todo of todoList">
+                       <div (click)="viewTodo(i)">
+                           {{i}} {{todo.item}}
+                       </div>
                     </div>
                 </div>
             </div>
